@@ -36,6 +36,13 @@ create table students
 ) engine=InnoDB;
  
 set names 'utf8';
+
+insert into groups (groupName, curator, speciality) 
+values ('Первая', 'Доктор Борменталь', 'Создание собачек из человеков');
+insert into groups (groupName, curator, speciality) 
+values ('Вторая', 'Профессор Преображенский', 'Создание человеков из собачек');
+insert into groups (groupName, curator, speciality) 
+values ('Третья', 'Профессор Преображенский', 'Скрещивание собачек (Факультатив)');
  
 insert into students (firstName, patronymic, surName, sex, dateOfBirth, group_id, educationYear)
 values ('Иван', 'Сергеевич', 'Степанов', 'М', '1990-03-20', 1, 2006);
@@ -49,10 +56,5 @@ insert into students (firstName, patronymic, surName, sex, dateOfBirth, group_id
 values ('Вероника', 'Сергеевна', 'Ковалева', 'Ж', '1991-07-19', 2, 2006);
 insert into students (firstName, patronymic, surName, sex, dateOfBirth, group_id, educationYear)
 values ('Ирина', 'Федоровна', 'Истомина', 'Ж', '1991-04-29', 2, 2006);
-insert into groups (groupName, curator, speciality) 
-values ('Первая', 'Доктор Борменталь', 'Создание собачек из человеков');
-insert into groups (groupName, curator, speciality) 
-values ('Вторая', 'Профессор Преображенский', 'Создание человеков из собачек');
-insert into groups (groupName, curator, speciality) 
-values ('Третья', 'Профессор Преображенский', 'Скрещивание собачек (Факультатив)');
+
 commit;
