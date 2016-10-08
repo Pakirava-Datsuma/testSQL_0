@@ -1,3 +1,3 @@
 SELECT *
-FROM students LEFT JOIN groups 
+FROM students RIGHT OUTER JOIN groups 
 	ON (students.group_id = groups.group_id);
