@@ -7,3 +7,4 @@ So file *pivot.xlsx* is created [in Google Documents]
 And for speeding up solving process I used [online MySQL server]
     (http://sqlfiddle.com/) 
 instead of installing local one.
+Also first lines which creates databse for tables wasn't tested due to using online MySQL server.
