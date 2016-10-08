@@ -5,13 +5,13 @@
  1. Execute these queries on your own database (please correct errors if you find).
  2. Write SQL query returns all data from two tables in a single result set. Export it into Excel file.
  3. Make a pivot table contains the following data: names of groups, count of male/female in each group.
-*/
+
 DROP DATABASE IF EXISTS students;
  
 CREATE DATABASE students DEFAULT CHARACTER SET 'utf8';
  
 USE students;
-
+*/
 create table groups
 (
   group_id int unsigned not null auto_increment,
