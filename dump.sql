@@ -30,7 +30,7 @@ create table students
   dateOfBirth date not null,
   sex char(1),
   group_id int unsigned not null,
-  educationYear int not null,
+  educationYear int unsigned not null,
   primary key (student_id),
   foreign key (group_id) REFERENCES groups(group_id)
 ) engine=InnoDB;
